@@ -1,0 +1,18 @@
+
+public class Tester {
+
+	public static void main(String[] args){
+		ControlFlowPractice obj = new ControlFlowPractice();
+		
+		//test the calculate cost
+		System.out.println(obj.calculateCost(100));
+		System.out.println(obj.calculateCost(50));
+		System.out.println(obj.calculateCost(0));
+		System.out.println(obj.calculateCost(25));
+		System.out.println(obj.calculateCost(-25));
+		System.out.println(obj.calculateCost(200));
+		
+		
+
+	}
+}

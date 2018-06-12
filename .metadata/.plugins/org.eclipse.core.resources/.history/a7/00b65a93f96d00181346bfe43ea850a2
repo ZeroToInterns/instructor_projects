@@ -1,0 +1,17 @@
+package evening;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		StringLoop obj = new StringLoop();
+		throw new ArithmeticException();
+//		obj.printHundred();
+//		obj.printEvens();
+//		obj.printOdds();
+		
+//		obj.printOs("Hello World");
+		obj.printPattern("Hello World");
+		
+	}
+
+}

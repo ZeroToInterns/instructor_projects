@@ -1,0 +1,15 @@
+
+public class StringLoop {
+
+	public void printHundred(){
+		for(int i= 0; i <= 100; i++){
+			System.out.println("The value is " + i);
+		}
+	}
+	
+	public void printEvens(){
+		for(int i= 0; i <= 100; i += 2){
+			System.out.println("The value is " + i);
+		}
+	}
+}

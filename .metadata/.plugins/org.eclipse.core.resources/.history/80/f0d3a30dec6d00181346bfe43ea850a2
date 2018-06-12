@@ -1,0 +1,11 @@
+package evening;
+
+public class StringLoop {
+
+	//print the numbers 1 - 100
+	
+	//prints the even numbers from 2- 100
+	
+	//print the odds from 1 - 100
+	
+}

@@ -1,0 +1,46 @@
+
+public class Tester {
+
+	
+	public static void chooseRoom(String newAnimal){
+		if(newAnimal == "Dog"){
+			System.out.println("Its a Dog");
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		chooseRoom("Dog");
+		
+//		int myInt = 10;
+//		double mySecondInt = 3.0;
+//		double result = myInt * mySecondInt;
+//		System.out.println(result);
+//		
+//		boolean myVar = 7==9 || 9==8 || 9==8 || myInt==10;
+//		boolean var = true;
+//		String concat = "Hello";
+//		String secondWord = " World";
+//		
+//		String result = concat + secondWord;
+//		
+//		concat = "Bye";
+		
+//		double temperature = 77.5;
+//		
+//		if(temperature >= 77.5 && temperature < 120){
+//			System.out.println("Its Hot");
+//		}
+//		else if(temperature >= 15 && temperature < 77.5){
+//			System.out.println("Its liveable");
+//		}
+//		else{
+//			System.out.println("Screw this");
+//		}
+		
+		
+		
+	}
+
+}

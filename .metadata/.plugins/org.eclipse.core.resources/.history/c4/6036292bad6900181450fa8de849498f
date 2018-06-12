@@ -1,0 +1,15 @@
+
+public class Circle {
+
+	private static double radius;
+	
+	public Circle(double radius){
+		this.radius = 5;
+	}
+	
+	public static void main(String[] args) {
+		Circle circleOne = new Circle(99.9);
+		
+	}
+
+}

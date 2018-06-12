@@ -1,0 +1,16 @@
+package evening;
+
+public class StringLoop {
+
+	//print the numbers 1 - 100
+	public void printHundred(){
+		for(int i = 0; i < 100; i++){
+			System.out.println("The value of i is: " + i);
+		}
+	}
+	
+	//prints the even numbers from 2- 100
+	
+	//print the odds from 1 - 100
+	
+}

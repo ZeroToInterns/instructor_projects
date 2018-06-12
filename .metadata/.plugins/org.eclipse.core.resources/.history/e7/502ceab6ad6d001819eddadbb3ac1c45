@@ -1,0 +1,12 @@
+
+public class Person implements Comparable{
+
+	private String name;
+	private double GPA;
+	private int age;
+	
+	//create a compareTo method that compares people by age
+	public int compareTo(Object o){
+		
+	}
+}

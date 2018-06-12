@@ -1,0 +1,14 @@
+
+public class Tester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringLoop looper = new StringLoop();
+//		looper.printHundred();
+//		looper.printEvens();
+//		looper.printPattern("Hello World");
+		
+		looper.printString("Hello World");
+	}
+
+}
