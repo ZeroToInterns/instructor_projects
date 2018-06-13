@@ -1,5 +1,5 @@
 
-public class SodaCan implements Comparable{
+public class SodaCan {
 	private double radius;
 	private double height;
 	private double capacity;
@@ -38,7 +38,7 @@ public class SodaCan implements Comparable{
 		return this.height;
 	}
 	
-	//drinks a certain amount of soda from the capacity
+	//
 	public void drink(double fluidOunces){
 		if(this.capacity < fluidOunces){
 			System.out.println("You don't have enough soda to drink that much!");
@@ -47,24 +47,5 @@ public class SodaCan implements Comparable{
 			this.capacity -= fluidOunces;
 		}
 		
-	}
-	
-	//returns the current capacity of soda in the can
-	public double getContents(){
-		return this.capacity;
-	}
-
-	@Override
-	public int compareTo(Object o) {
-		SodaCan otherSoda = (SodaCan) o;
-		if(this.capacity > otherSoda.capacity){
-			return 1;
-		}
-		else if(this.capacity < otherSoda.capacity){
-			return -1;
-		}
-		else{
-			return 0;
-		}
 	}
 }
