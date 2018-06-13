@@ -1,5 +1,5 @@
 
-public class ControlFlowPractice {
+public class ControlFlowPractice{
 
 	//calculates the cost based on the distance given
 	public double calculateCost(double distance){
@@ -15,14 +15,6 @@ public class ControlFlowPractice {
 		else{
 			return 0.0;
 		}
-		
-		//if distance is from 50 to 100
-			//print 100
-		//if distance is from 25 to 50
-			//print 10
-		//else
-			//print 0
-		
 	}
 	
 	//prints the value depending on the value given
@@ -52,24 +44,28 @@ public class ControlFlowPractice {
 	}
 	
 	public int findLetter(String letter, String word){
+		//letter  = "O"
+		//word = "Hello World"
+		//count == 1
 		int count = 0;
-		//loop ends where the index indicates
+		
 		for(int i = 0; i < word.length(); i++){
-			//if the current letter we are at matches the letter
+			
 			if(word.substring(i, i+1).equals(letter)){
-				//if we already incremented count once, return the index
-				if(count == 1){
-					return i;
-				}
-				//increment the count, this is the first time we saw this letter
-				else{
+				if(count != 1){
 					count++;
+				}
+				else{
+					return i;
 				}
 			}
 		}
-		//There are not two of the letters in the string
 		return 0;
 	}
+	
+	
+	
+	
 	
 	
 }

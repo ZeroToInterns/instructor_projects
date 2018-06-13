@@ -10,17 +10,19 @@ public class StringLoop {
 	}
 	
 	//prints the even numbers from 0 - 100
-	public void printEvens(){
-		for(int i = 0; i <= 100; i += 2){
-			System.out.println("The even number is: " + i);
-		}
+	public int printEvens(){
+//		for(int i = 0; i <= 100; i += 2){
+//			System.out.println("The even number is: " + i);
+//		}
+		return 2;
 	}
 	
 	//print the odds from 1 - 100
-	public void printOdds(){
-		for(int i = 1; i <= 100; i+=2){
-			System.out.println("The odd number is: " + i);
-		}
+	public int printOdds(){
+//		for(int i = 1; i <= 100; i+=2){
+//			System.out.println("The odd number is: " + i);
+//		}
+		return 1;
 	}
 	
 	//printO method loops through a string and prints "Found O!" when it hits an O

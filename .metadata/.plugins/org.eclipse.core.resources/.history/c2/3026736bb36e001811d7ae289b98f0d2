@@ -1,0 +1,5 @@
+package evening;
+
+public interface Speakable {
+
+}

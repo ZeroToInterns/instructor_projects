@@ -1,0 +1,18 @@
+package evening;
+
+import org.junit.Test;
+
+public class Tester {
+
+	@Test
+	public void testStringLoopPrintEven(){
+		StringLoop obj = new StringLoop();
+		assertTrue(obj.printEvens(), "Even");
+	}
+	
+	@Test
+	public void testStringLoopPrintOdd(){
+		StringLoop obj = new StringLoop();
+		obj.printOdds();
+	}
+}
