@@ -21,6 +21,7 @@ public class StringManipulation {
 		//print from index 3 to index 7 (3 characters)
 		String name = fullName.substring(4, 7);
 		System.out.println(name);
+		in.close();
 	}
 
 }

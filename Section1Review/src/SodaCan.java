@@ -3,6 +3,7 @@ public class SodaCan implements Comparable{
 	private double radius;
 	private double height;
 	private double capacity;
+	public static final double FLUID_OUNCES_CONVERSION = 0.554112554;
 	
 	public SodaCan(){
 		this.radius = 1.12109;
@@ -21,11 +22,8 @@ public class SodaCan implements Comparable{
 		//caluculate volume
 		double volume = Math.PI * radius * radius * height;
 		
-		//1 cubic inch is 0.554112554 fluid ounces
-		double conversionConstant = 0.554112554;
-		
 		//convert volume to fluid ounces and update capacity
-		this.capacity = volume/conversionConstant ;
+		this.capacity = volume * FLUID_OUNCES_CONVERSION ;
 	}
 	
 	//returns the radius of the soda can
@@ -46,7 +44,6 @@ public class SodaCan implements Comparable{
 		else{
 			this.capacity -= fluidOunces;
 		}
-		
 	}
 	
 	//returns the current capacity of soda in the can

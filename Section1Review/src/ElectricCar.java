@@ -4,11 +4,16 @@ public class ElectricCar {
 	private int currentRange;
 	private String make;
 	
-	public ElectricCar(String make, int theMaxRange){
-		this.make = make;
+	public ElectricCar(String theMake, int theMaxRange){
+		this.make = theMake;
 		this.maxRange = theMaxRange;
 		this.currentRange = 0; //The car is uncharged when created
 	}
+	
+	ElectricCar car = new ElectricCar("Tesla", 15);
+	
+	
+	
 	
 	//charges the car to the maxRange
 	public void charge(){
