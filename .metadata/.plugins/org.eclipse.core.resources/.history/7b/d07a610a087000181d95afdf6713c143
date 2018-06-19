@@ -1,0 +1,16 @@
+import org.junit.*;
+
+public class Tester {
+
+//	private LoopFun obj;
+	
+	@Before
+	public void setUp(){
+		LoopFun obj = new LoopFun();
+	}
+	
+	@Test
+	public void testPermutationCount(){
+		assertEquals(obj.getPermutationCount(8), 40320);
+	}
+}

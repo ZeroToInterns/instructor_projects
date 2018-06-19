@@ -7,6 +7,9 @@ public class SubSandwhich {
 	private int size;
 	private boolean extraMeat;
 	
+			//theType = 0
+			//theSize = 6
+			//extraMeat = true
 	
 	public SubSandwhich(int theType, int theSize, boolean extraMeat){
 		//set the type of the sandwhich to chicken or pastrami
@@ -33,7 +36,12 @@ public class SubSandwhich {
 	}
 	
 	public void setSize(int newSize){
-		this.size = newSize;
+		if(newSize != 6 && newSize != 12){
+			this.size = 12;
+		}
+		else{
+			this.size = newSize;
+		}
 	}
 	
 	public boolean isExtraMeat(){
@@ -52,8 +60,8 @@ public class SubSandwhich {
 	
 	//returns the cost of the sandwhich
 	public double getCost(){
-		
 		double price = 0.0;
+		
 		//if the sandwhich has extra meat, add 1.50 to the price
 		if(this.isExtraMeat()){
 			price = 1.50;
@@ -69,7 +77,7 @@ public class SubSandwhich {
 				return price + 6.95;			
 			}
 		}
-		else{
+		else{ 
 			//if the size is 12 and type is chicken
 			if(this.getType().equals("chicken")){
 				return price + 8.95;

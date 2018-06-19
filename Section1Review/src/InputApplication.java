@@ -9,7 +9,7 @@ public class InputApplication {
 		String favoriteDessert = in.nextLine();
 		
 		//print the last letter of the input
-		System.out.println(favoriteDessert.substring(favoriteDessert.length()-1, favoriteDessert.length()));
+		System.out.println(favoriteDessert.substring(favoriteDessert.length()-1));
 		
 		System.out.print("Enter a double: ");
 		double num1 = in.nextDouble();

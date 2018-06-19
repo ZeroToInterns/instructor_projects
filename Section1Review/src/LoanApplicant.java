@@ -21,7 +21,7 @@ public class LoanApplicant {
 			}
 		}
 		else if(salary <= 50000 && salary > 30000){
-			if(yearsOnJob > 5){
+			if(yearsOnJob >= 5){
 				return true;
 			}
 			else{
@@ -31,7 +31,6 @@ public class LoanApplicant {
 		else{
 			return false;
 		}
-		
 	}
 	
 	public void setYearsOnJob( int years){

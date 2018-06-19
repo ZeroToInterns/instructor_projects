@@ -1,0 +1,83 @@
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Counter
+{
+    private File inputFile;
+    
+    public Counter(File inputFile)
+    {
+        this.inputFile = inputFile;
+    }
+    
+    
+    public static void main(String[] args){
+    	String line = "";
+    	System.out.print(line.length());
+    }
+    
+    public int countLines()
+    {
+        int count = 0;
+        
+        try{
+        	Scanner in = new Scanner(this.inputFile);
+        	while(in.hasNextLine()){
+        		in.nextLine();
+        		count++;
+        	}
+        }
+        catch(FileNotFoundException e){
+        	System.out.println("File was not found");
+//        	e.getStackTrace();
+        }
+        
+        return count;
+    }
+
+    
+    
+    
+    public int countWords()
+    {
+        int count = 0;
+        
+        try{
+        	Scanner in = new Scanner(this.inputFile);
+        	while(in.hasNext()){
+        		in.next();
+        		count++;
+        	}
+        }
+        catch(FileNotFoundException e){
+        	System.out.println("File was not found");
+//        	e.getStackTrace();
+        }
+        
+        return count;
+    }
+
+    
+    
+    public int countChars()
+    {
+        int count = 0;
+        try{
+        	Scanner in = new Scanner(this.inputFile);
+        	return (int) this.inputFile.length();
+//        	while(in.hasNextLine()){
+//        		String line = in.;
+//        		count += line.length() +1;
+//        	}
+        }
+        catch(FileNotFoundException e){
+        	System.out.println("File was not found");
+//        	e.getStackTrace();
+        }
+        
+        return count;
+    }
+}
+

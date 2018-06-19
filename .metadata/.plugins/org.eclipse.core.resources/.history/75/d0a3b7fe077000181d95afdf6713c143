@@ -1,0 +1,14 @@
+import org.junit.*;
+
+public class Tester {
+
+	@Before
+	public void setUp(){
+		
+	}
+	
+	@Test
+	public void testPermutationCount(){
+		assertEquals(f.getPermutationCount(8), 40320);
+	}
+}
