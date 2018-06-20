@@ -1,5 +1,0 @@
-package evening;
-
-public interface Speakable {
-	public void speak();
-}

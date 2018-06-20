@@ -1,0 +1,15 @@
+
+public class BattleShip {
+
+	public boolean[][] grid; 
+	
+	public BattleShip(){
+		grid = new boolean[10][10];
+	}
+	
+	public void placeFishingBoat(int x, int y){
+		
+	}
+
+}
+

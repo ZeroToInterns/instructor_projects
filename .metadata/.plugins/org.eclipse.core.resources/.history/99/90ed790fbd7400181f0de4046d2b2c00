@@ -1,0 +1,9 @@
+
+public class Tester {
+
+	public static void main(String[] args){
+		
+		BattleShip game1 = new BattleShip();
+		System.out.println(game1.grid[0][0]);;
+	}
+}

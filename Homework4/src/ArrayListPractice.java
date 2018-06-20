@@ -11,27 +11,30 @@ public class ArrayListPractice {
 		myList.add("Purple");
 		myList.add("Black");
 		myList.add("Brown");
-		myList.add("Teal");
+		myList.add("Green");
 		myList.add("Rainbow");
 		myList.add("Blue");
 		
-		insertFirst(myList, "Black");
-		System.out.println(myList);
+//		insertFirst(myList, "Black");
+//		System.out.println(myList);
+//		
+//		addToSecondLast(myList, "Green");
+//		System.out.println(myList);
 		
-		addToSecondLast(myList, "Green");
-		System.out.println(myList);
+//		System.out.println("Green appears this many times: " + countColors(myList, "Green"));
 		
-		System.out.println("Green appears this many times: " + countColors(myList, "Green"));
-		
-		replaceColor(myList, "Blue", "New Color");
+		replaceColor(myList, "Blue", "Orange");
 		System.out.print(myList);
 	}
+	
+	
 	
 	
 	//inserts element at beginning of the array list
 	public static void insertFirst(ArrayList<String> list, String color){
 		list.add(0, color);
 	}
+	
 	
 	//adds to second to last position
 	public static void addToSecondLast(ArrayList<String> list, String color){
